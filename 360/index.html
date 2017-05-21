@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="fullPage" id="fullPage">
+    <!--第一屏-->
+    <section class="section">
+        <div class="logo"></div>
+        <!--注意：span之间不能留空格，空格会显示在网页上-->
+        <div class="text"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="feature"></div>
+    </section>
+    <!--第二屏-->
+    <section class="section">
+        <!-- 盾牌 -->
+        <div class="shield">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- 介绍 -->
+        <div class="intro"></div>
+    </section>
+    <!--第三屏-->
+    <section class="section">
+        <div class="text"></div>
+        <div class="circle">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="rocket"></div>
+    </section>
+    <!--第四屏-->
+    <section class="section">
+        <div class="text"></div>
+        <div class="search">
+            <span class="key"></span>
+            <div class="wrap">
+                <div class="nav"></div>
+            </div>
+        </div>
+    </section>
+    <!--第五屏-->
+    <section class="section">
+        <div class="text"></div>
+        <div class="leftside"></div>
+        <div class="rightside"></div>
+        <div class="topside"></div>
+        <div class="logo">
+
+        </div>
+        <div class="search"></div>
+    </section>
+</div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.fullPage.min.js"></script>
+<script>
+
+    $('#fullPage').fullpage({/*用fullPage插件实现的全屏*/
+        css3: true,
+        afterLoad: function (anchorLink, index) {
+
+        $('.section').removeClass('current');
+
+        // 延时100毫秒执行
+        setTimeout(function () {
+            $('.section').eq(index - 1).addClass('current');
+        }, 100);
+    }
+    });
+</script>
+</html>

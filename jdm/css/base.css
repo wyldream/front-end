@@ -1,0 +1,49 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    /*消除点击默认效果*/
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: "microsoft yahei",sans-serif;
+    /*第二个是手机默认字体*/
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul{
+    list-style: none;
+}
+
+input,textarea{
+    border: none;
+    resize: none;
+    outline: none;/*清除默认选中框*/
+    -webkit-appearance: none;
+    /*清除浏览器默认样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+[class^="icon_"]{
+    background: url("../img/sprit es.png") no-repeat;
+    background-size:200px 200px;
+}

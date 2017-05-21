@@ -1,0 +1,415 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    list-style: none;
+}
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.section:first-child{
+    background-color: #0da5d6;
+}
+.section:first-child .logo,
+.section:first-child .feature {
+    position: absolute;
+    background: url("images/p1.png") no-repeat;
+}
+.section:first-child .logo{
+    left: 270px;
+    top:100px;
+    width: 772px;
+    height: 200px;
+}
+.section:first-child .feature{
+    width: 772px;
+    height: 49px;
+    margin: 156px 0 0 -386px;
+    background: url(images/p1.png) no-repeat;
+    background-position:0 -345px;/*背景图像位置，第一个用于横坐标，第二个纵坐标*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.section:first-child .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top:50%;
+    margin-top: 20px;
+    font-size: 80px;
+}
+.section:first-child span{
+    background: url(images/p1.png) no-repeat;
+    display: inline-block;
+    opacity:0;
+    margin: 0 40px;
+}
+/*第一屏动画终止状态*/
+.current.section:first-child span {
+    opacity: 1;
+    margin: 0 7px;
+    transition: all 1s ease-out 0.3s;
+}
+.section:first-child span:nth-child(1) {
+    background-position: -7px -208px;
+    width: 63px;
+    height: 83px;
+}
+
+.section:first-child span:nth-child(2) {
+    background-position: -76px -205px;
+    width: 91px;
+    height: 90px;
+}
+
+.section:first-child span:nth-child(3) {
+    background-position: -181px -209px;
+    width: 82px;
+    height: 85px;
+}
+
+.section:first-child span:nth-child(4) {
+    background-position: -277px -204px;
+    width: 90px;
+    height: 91px;
+}
+
+.section:first-child span:nth-child(5) {
+    background-position: -376px -205px;
+    width: 92px;
+    height: 90px;
+}
+
+.section:first-child span:nth-child(6) {
+    background-position: -481px -209px;
+    width: 82px;
+    height: 85px;
+}
+
+.section:first-child span:nth-child(7) {
+    background-position: -576px -205px;
+    width: 92px;
+    height: 90px;
+}
+
+.section:first-child span:nth-child(8) {
+    background-position: -677px -204px;
+    width: 91px;
+    height: 91px;
+}
+/*-------------------------------第二屏-------------------------------------*/
+.section:nth-child(2) {
+    background-color: #2AB561;
+}
+.section:nth-child(2) .shield{
+    width: 429px;
+    height: 498px;
+    margin: -241px 0 0 -550px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 0;
+}
+.section:nth-child(2) .intro{
+    background:url("images/p2.png") no-repeat;
+    width: 635px;
+    height: 309px;
+    position: absolute;
+    left:610px;
+    top: 170px;
+}
+.section:nth-child(2) span{
+    display: block;
+    background:url("images/shield.png") no-repeat;
+    position: absolute;
+}
+/*动画初始状态*/
+.section:nth-child(2) span:nth-child(1) {
+    width: 111px;
+    height: 121px;
+    background-position: -10px -34px;
+    top: 28px;
+    transform: translate(460%, -128%) rotate(80deg);
+}
+
+.section:nth-child(2) span:nth-child(2) {
+    width: 176px;
+    height: 149px;
+    background-position: -123px -6px;
+    left: 113px;
+    transform: translate(65%, 279%) rotate(145deg);
+}
+
+.section:nth-child(2) span:nth-child(3) {
+    width: 117px;
+    height: 121px;
+    background-position: -301px -34px;
+    left: 291px;
+    top: 28px;
+    transform: translate(400%, 380%) rotate(70deg);
+}
+
+.section:nth-child(2) span:nth-child(4) {
+    width: 106px;
+    height: 176px;
+    background-position: -15px -157px;
+    top: 151px;
+    left: 5px;
+    transform: translate(500%, 29%) rotate(110deg);
+}
+
+.section:nth-child(2) span:nth-child(5) {
+    width: 176px;
+    height: 176px;
+    background-position: -123px -157px;
+    top: 151px;
+    left: 113px;
+    transform: translate(472%, 73%) rotate(60deg);
+}
+
+.section:nth-child(2) span:nth-child(6) {
+    width: 111px;
+    height: 176px;
+    background-position: -301px -157px;
+    top: 151px;
+    left: 291px;
+    transform: translate(195%, 136%) rotate(90deg);
+}
+
+.section:nth-child(2) span:nth-child(7) {
+    width: 80px;
+    height: 100px;
+    background-position: -41px -335px;
+    top: 329px;
+    left: 31px;
+    transform: translate(-31%, -106%) rotate(282deg);
+}
+
+.section:nth-child(2) span:nth-child(8) {
+    width: 176px;
+    height: 153px;
+    background-position: -123px -335px;
+    top: 329px;
+    left: 113px;
+    transform: translate(47%, -157%) rotate(80deg);
+}
+
+.section:nth-child(2) span:nth-child(9) {
+    width: 83px;
+    height: 102px;
+    background-position: -301px -335px;
+    top: 329px;
+    left: 291px;
+    transform: translate(-320%, -410%) rotate(120deg);
+}
+/*终止状态*/
+/*注意不能放在前面，放在前面动画不会执行，后面的状态把前面的覆盖了*/
+.current.section:nth-child(2) span{
+    transform:translate(0, 0) rotate(0deg);
+    transition: all 2s ease-in-out;
+}
+/*---------------3----------------------------------------------*/
+.section:nth-child(3) {
+    background-color: orange;
+    position: relative;
+}
+.section:nth-child(3) .text{
+    background: url(images/p3.png) 0px -290px no-repeat;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left:70px;
+    top: 190px;
+}
+.section:nth-child(3) .circle li:nth-child(1){
+    background: url("images/p3.png") 0 -600px no-repeat;
+    width: 450px;
+    height: 455px;
+    position: absolute;
+    left:770px;
+    top: 90px;;
+}
+.section:nth-child(3) .circle li:nth-child(2){
+    background: url("images/p3.png") -460px -600px no-repeat;
+    width: 430px;
+    height: 430px;
+    position: absolute;
+    left:790px;
+    top: 98px;;
+}
+.section:nth-child(3) .circle li:nth-child(3){
+    background: url("images/p3.png") -880px -600px no-repeat;
+    width: 410px;
+    height: 410px;
+    position: absolute;
+    left:812px;
+    top: 96px;;
+}
+.section:nth-child(3) .rocket{
+    background: url("images/p3.png") -360px 0 no-repeat;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    bottom:-220px;
+    left:200px;
+    transition: all 1s ease-in-out;
+}
+.current.section:nth-child(3) .rocket{
+    bottom: 235px;
+    left:875px;
+}
+/*4*/
+.section:nth-child(4){
+    background-color: deepskyblue;
+    position: relative;
+}
+.section:nth-child(4) .text{
+    position: absolute;
+    left: 660px;
+    top: 130px;
+    background: url("images/p4.png") -560px 0 no-repeat;/*先水平后垂直*/
+    width: 620px;
+    height: 320px;
+}
+.section:nth-child(4) .search{
+    width: 520px;
+    height: 55px;
+    position: absolute;
+    background: url("images/p4.png") no-repeat;
+    left:-520px;
+    top:200px;
+    padding: 25px 0 0 25px;
+    color: #fff;
+    opacity:0;
+    transition: all .6s ease-out;
+}
+.current.section:nth-child(4) .search{
+    left: 80px;
+    opacity:1;
+}
+.section:nth-child(4) .search .wrap{
+    width: 500px;
+    height:350px;
+    position: absolute;
+    left: 0;
+    top:49px;
+    overflow: hidden;
+}
+.section:nth-child(4) .search .nav{
+    width: 100%;
+    height: 100%;
+    background: url("images/p4.png") 0 -78px no-repeat;
+    transform: translate(0,-350px);
+    opacity:0;
+}
+.current.section:nth-child(4) .search .nav{
+    transform: translate(0,0);
+    opacity:1;
+    transition: all .6s 2.8s;/*最好放下面，放上面延时不稳定？？？*/
+}
+.section:nth-child(4) .search .key{
+    display: inline-block;
+    width:0;
+    height: 40px;
+    background: url("images/p4.png") -568px -310px no-repeat;
+    position: absolute;
+    left:22px;
+    top: 6px;
+}
+.current.section:nth-child(4) .search .key{
+    animation:show 1.5s steps(5) .8s forwards;
+}
+@keyframes show {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95px;
+    }
+}
+/*第五屏*/
+.section:nth-child(5){
+    background-color: #fa0;
+    position: relative;
+}
+.section:nth-child(5) .text{
+    background: url("images/p5.png") no-repeat;
+    width: 1100px;
+    height:150px;
+    margin:auto;
+}
+.section:nth-child(5) .leftside{
+    position: absolute;
+    left:240px;
+    top:-180px;
+    border-left: .5px solid #f6f6f6;
+    height: 505px;
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+.current.section:nth-child(5) .leftside{
+    top:180px;
+    opacity: .6;
+}
+.section:nth-child(5) .topside{
+    position: absolute;
+    left:2400px;
+    top:180px;
+    border-top: .5px solid #f6f6f6;
+    width: 1000px;
+    opacity:0;
+    transition: all .8s ease-in-out;
+}
+.current.section:nth-child(5) .topside{
+    left:240px;
+    opacity: .6;
+}
+.section:nth-child(5) .rightside{
+    position: absolute;
+    left:1240px;
+    top:1300px;
+    border-left: .5px solid #f6f6f6;
+    height: 505px;
+    opacity:0;
+    transition: all .8s ease-in-out;
+}
+.current.section:nth-child(5) .rightside{
+    top:180px;
+    opacity:0.6;
+}
+.section:nth-child(5) .logo{
+    background: url("images/p5.png") -44px -168px no-repeat;
+    width: 980px;
+    height: 50px;
+    position: absolute;
+    left:250px;
+    top: 190px;
+    opacity:0;
+
+}
+.current.section:nth-child(5) .logo{
+    opacity:1;
+    transition: all 1.8s ease-in-out 1.8s;/*放下面*/
+}
+.section:nth-child(5) .search{
+    width: 0px;
+    height: 25px;
+    position: absolute;
+    left:316px;
+    top:213px;
+    border: .5px solid #f6f6f6;
+    opacity:0;
+
+}
+.current.section:nth-child(5) .search{
+    width: 910px;
+    opacity:0.6;
+    transition: all 1.8s ease-in-out .8s;
+}

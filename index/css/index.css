@@ -1,0 +1,168 @@
+@charset "utf-8";
+.banner604{
+    position: relative;
+}
+.banner604 a{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;/*不加这句则宽度和他的内容一样*/
+    /*定位的盒子想铺满整个屏幕必须将我width设置成100%*/
+    height: 604px;
+    background: url("../images/banner.jpg") no-repeat top center;
+}
+.main{
+    position: relative;
+}
+.slider{
+      width: 730px;
+      height: 453px;
+      background-color: pink;
+      margin:12px 0 0 220px;
+      float: left;
+      position: relative;
+}
+.circle{
+    position: absolute;
+    /*将元素设置成absolute定位时，如果没有给设置top,left等值，将会按照原来正常流的方式显示*/
+    bottom: 8px;/*据下底8px*/
+    left: 50%;
+    margin-left:-66px;
+}
+.circle li{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #3e3e3e;
+    float: left;
+    text-align: center;
+    line-height:18px;
+    color: #fff;
+    margin:0 2px;
+    cursor: pointer;
+}
+.circle li.current{
+    background-color: #b6161f;
+}
+.arrow{
+    display: none;
+}
+.arrow-l,
+.arrow-r{
+    position: absolute;
+    width: 28px;
+    height: 62px;
+    background-color: pink;
+    top: 50%;
+    margin-top: -31px;
+    text-align: center;
+    color: #fff;
+    font:500 18px/62px "宋体";/*包含让其垂直居中的功能*/
+    background-color: rgba(0,0,0,.3);/*0,0,0代表黑色，.3是透明度*/
+}
+.arrow-l{
+    left:0;
+}
+.arrow-r{
+    right:0;
+}
+.arrow-r:hover,.arrow-l:hover{
+    background: rgba(0,0,0,.4);
+    color: #fff;
+}
+.news{
+    width: 248px;
+    height: 451px;
+    border:1px solid #e4e4e4;
+    float: right;
+    margin-top:12px;
+}
+.jd-news{
+    height: 200px;
+    border-bottom:1px dashed #e4e4e4;
+}
+.jd-news .dt,.lifeservi .dt{
+    height: 43px;
+    border-bottom:1px solid #e8e8e7;
+    line-height:43px;
+}
+.jd-news .dt h3,.lifeservi .dt h3{
+    float: left;
+    font:14px/43px "microsoft yahei";
+    color: #666;
+    padding-left:15px;
+}
+.jd-news .dt a{
+    float: right;
+    padding-right:10px;
+}
+.jd-news .dd ul{
+    padding:8px 0 0 15px;
+}
+.jd-news .dd li{
+    line-height: 28px;
+}
+.jd-news .dd li span{
+    font-weight: 700;
+    margin-right:5px;
+}
+.lifeservi{
+    height: 251px;
+    width: 248px;
+    overflow: hidden;
+}
+.lifeservi ul{/*一个大盒子中容纳4个小盒子*/
+    width: 252px;/*增加它的宽度以使其能够容纳4个盒子*/
+}
+.lifeservi .dd{
+    border-top:1px dotted #e8e8e7;
+    height:251px;
+    overflow: hidden;
+}
+.lifeservi .dd li{
+    width: 62px;
+    height: 70px;
+    border:1px solid #e4e4e4;
+    float: left;
+    margin:-1px 0 0 -1px;
+    position: relative;
+}
+.lifeservi li a{
+    display: block;
+    height: 70px;
+    text-align: center;
+    padding-top:44px;
+}
+.lifeservi li i{
+    position: absolute;
+    top:12px;/*这两个控制图片显示的位置*/
+    left:18px;
+    width: 25px;/*这两个控制图片显示的大小*/
+    height: 25px;
+    background: url(../images/icon_lifeserv.png) no-repeat right top;
+}
+.lifeservi .song{
+    background: url("../images/song.png") no-repeat right top;
+}
+.lifeservi .mian{
+    background: url("../images/mian.png") no-repeat right top;
+}
+/*活动*/
+.todays{
+    position: relative;
+}
+.night{
+    margin:10px 0 28px 0;
+}
+.night-r{
+    width: 1000px;
+    height: 160px;
+    float: right;
+}
+.night-r ul{
+    width: 500%;
+}
+.night-r li{
+    float: left;
+    margin-right:1px;
+}
